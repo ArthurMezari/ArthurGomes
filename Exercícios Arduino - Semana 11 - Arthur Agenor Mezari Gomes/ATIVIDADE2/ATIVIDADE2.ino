@@ -21,7 +21,7 @@ void setup() {
 void loop() {
   bool estado = digitalRead(pin_botao);
   if (estado == 1) {
-    digitalWrite(pin_led1, HIGH);
+    digitalWrite(pin_led1, HIGH); //o comando "HIGH", liga o led.
     digitalWrite(pin_led2, HIGH);
     digitalWrite(pin_led3, HIGH);
     digitalWrite(pin_led4, HIGH);
@@ -29,7 +29,7 @@ void loop() {
 
   
   else {
-    digitalWrite(pin_led1, LOW);
+    digitalWrite(pin_led1, LOW); //o comando "LOW", desliga o led.
     digitalWrite(pin_led2, LOW);
     digitalWrite(pin_led3, LOW);
     digitalWrite(pin_led4, LOW);
